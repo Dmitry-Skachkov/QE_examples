@@ -42,7 +42,9 @@ For larger number of nodes, probably, the optimized parameters for parallelizati
 
 In order to use automatic generation for k-points pathway you need to use [ibrav](https://www.quantum-espresso.org/Doc/INPUT_PW.html#idm218) parameter /= 0. 
 
-For description of notation of high-symmetry points see [pdf](Example_02/A.Dal_Corso__Brillouin_zones.pdf)
+For description of notation of high-symmetry points see [pdf](Example_02/A.Dal_Corso__Brillouin_zones.pdf)   
+
+
 [Go to top](#quantum-espresso-usage)    
 
 
