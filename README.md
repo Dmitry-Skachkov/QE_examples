@@ -59,7 +59,10 @@ M    20
 gG    1
 ```
 
-For Greek names use first letter g: gG (&Gamma;), gS (&Sigma;),    
+For Greek names use first letter g:     
+gG - &Gamma;     
+gS - &Sigma;   
+
 
 [Go to top](#quantum-espresso-usage)    
 
