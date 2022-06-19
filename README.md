@@ -30,6 +30,6 @@ Here are the test results for calculation time running QE on 2 nodes with 48 cor
  1    2    1    1    2    1m19s
  1    2    2    1    2    1m15s      <-- optimized
 ```
-The optimized running job script for 2 nodes is [job_QE_2x48](Example_04/job_QE_2x48)    
+The optimized running job script for 2 nodes is [job_QE_2x48]([Example_04/job_QE_2x48](https://github.com/Dmitry-Skachkov/Yambo_examples/blob/main/Example_04/job_QE_2x48))    
 Please note that optimized parameters depend on particular compiled version of QE (including scalapack or not) and particular system. Please also note, that for nscf calculation the optimized parameters will be different than for scf.    
 For larger number of nodes, probably, the optimized parameters for parallelization will involve hybrid MPI/OpenMP scheme.
