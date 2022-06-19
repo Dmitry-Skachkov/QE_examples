@@ -49,6 +49,16 @@ To generate the pathway you can use [AFlow on-line tool](https://aflow.org/aflow
 
 There are available other on-line tools to generate k-points pathway, for example, [MaterialsCloud](https://www.materialscloud.org/work/tools/seekpath), with **different** notations for high-symmetry points. In QE there are implemented two different schemes for plotting pathway.    
 
+In input file for bands.x program you can set the pathway by using notations for high-symmetry points:   
+```
+K_POINTS crystal_b
+4
+gG   20
+K    10
+M    20
+gG    1
+```
+
 [Go to top](#quantum-espresso-usage)    
 
 
