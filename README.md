@@ -52,8 +52,8 @@ There are available other on-line tools to generate k-points pathway, for exampl
 In input file for [bands.x](https://www.quantum-espresso.org/Doc/INPUT_BANDS.html) program you can set the pathway by using notations for high-symmetry points:   
 ```
 K_POINTS crystal_b
-4
-gG   20
+4                           # total number of high-symmetry points
+gG   20                     # point Gamma with 20 intermediate points to next high-symmetry point 
 K    10
 M    20
 gG    1
