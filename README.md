@@ -40,7 +40,7 @@ For larger number of nodes, probably, the optimized parameters for parallelizati
 
 ## Band structure calculation in QE     
 
-In order to use automatic generation for k-points pathway you need to use [ibrav](https://www.quantum-espresso.org/Doc/INPUT_PW.html#idm218) parameter /= 0. 
+In order to use automatic generation for k-points pathway you need to use [ibrav](https://www.quantum-espresso.org/Doc/INPUT_PW.html#idm218) parameter of QE input /= 0. 
 
 For notations of high-symmetry points used in QE see [pdf](Example_02/A.Dal_Corso__Brillouin_zones.pdf)   
 
