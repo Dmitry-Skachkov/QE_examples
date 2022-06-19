@@ -67,6 +67,7 @@ gS - &Sigma;
 
 *Note1*. There are available other on-line tools to generate k-points pathway, for example, [MaterialsCloud](https://www.materialscloud.org/work/tools/seekpath), with **different** notations for high-symmetry points. In QE there are implemented two different schemes for plotting pathway.    
 
+*Note2*. Both on-line tools, AFlow and MaterialsCloud, transform initial system to new symmetrized system with different coordinate system. 
 
 [Go to top](#quantum-espresso-usage)    
 
