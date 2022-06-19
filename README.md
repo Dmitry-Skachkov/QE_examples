@@ -49,8 +49,6 @@ In order to use automatic generation for k-points pathway in QE you need to use 
 
 For notations of high-symmetry points used in QE see [Notes by Andrea Dal Corso](Example_02/A.Dal_Corso__Brillouin_zones.pdf)   
 
-There are available other on-line tools to generate k-points pathway, for example, [MaterialsCloud](https://www.materialscloud.org/work/tools/seekpath), with **different** notations for high-symmetry points. In QE there are implemented two different schemes for plotting pathway.    
-
 In input file for 'bands' calculation you can set the pathway by using notations for high-symmetry points:   
 ```
 K_POINTS crystal_b
@@ -66,6 +64,8 @@ gS1   1
 For Greek names use first letter g:     
 gG - &Gamma;     
 gS - &Sigma;   
+
+*Note1*. There are available other on-line tools to generate k-points pathway, for example, [MaterialsCloud](https://www.materialscloud.org/work/tools/seekpath), with **different** notations for high-symmetry points. In QE there are implemented two different schemes for plotting pathway.    
 
 
 [Go to top](#quantum-espresso-usage)    
