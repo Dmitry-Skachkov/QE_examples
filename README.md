@@ -44,7 +44,8 @@ In order to use automatic generation for k-points pathway you need to use [ibrav
 
 For notations of high-symmetry points used in QE see [pdf](Example_02/A.Dal_Corso__Brillouin_zones.pdf)   
 
-For description of different types of Brillouin zones see [Computational Materials Science, 49, 299 (2010)](https://doi.org/10.1016/j.commatsci.2010.05.010) and [on-line tool](https://aflow.org/aflow-online/)
+For description of different types of Brillouin zones see [Computational Materials Science, 49, 299 (2010)](https://doi.org/10.1016/j.commatsci.2010.05.010).   
+To generate the pathway you can use [on-line tool](https://aflow.org/aflow-online/).   
 
 [Go to top](#quantum-espresso-usage)    
 
