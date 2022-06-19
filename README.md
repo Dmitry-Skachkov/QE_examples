@@ -42,12 +42,12 @@ For larger number of nodes, probably, the optimized parameters for parallelizati
 
 In order to calculate band structure in QE, you need to run 'scf' calculation to calculate the ground state first, and then to run 'bands' calculation in order to calculate the band structure on the desired k-points pathway.
 
-In order to use automatic generation for k-points pathway you need to use [ibrav](https://www.quantum-espresso.org/Doc/INPUT_PW.html#idm218) parameter of QE input /= 0. 
-
-For notations of high-symmetry points used in QE see [Notes by Andrea Dal Corso](Example_02/A.Dal_Corso__Brillouin_zones.pdf)   
-
 For description of different types of Brillouin zones see [Computational Materials Science, 49, 299 (2010)](https://doi.org/10.1016/j.commatsci.2010.05.010).   
 To generate the pathway you can use [AFlow on-line tool](https://aflow.org/aflow-online/).  
+
+In order to use automatic generation for k-points pathway in QE you need to use [ibrav](https://www.quantum-espresso.org/Doc/INPUT_PW.html#idm218) parameter of QE input /= 0. 
+
+For notations of high-symmetry points used in QE see [Notes by Andrea Dal Corso](Example_02/A.Dal_Corso__Brillouin_zones.pdf)   
 
 There are available other on-line tools to generate k-points pathway, for example, [MaterialsCloud](https://www.materialscloud.org/work/tools/seekpath), with **different** notations for high-symmetry points. In QE there are implemented two different schemes for plotting pathway.    
 
