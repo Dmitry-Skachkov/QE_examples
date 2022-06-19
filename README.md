@@ -1,10 +1,10 @@
-# Quantum Espresso usage
+# [Quantum Espresso](https://www.quantum-espresso.org/) usage
 
 * [Parallel calculation](#yambo-installation-on-stokes-supercluster-of-ucf)    
-    * [Automatic installation of version 5.0.4](#automatic-installation-of-version-504)   
+    
 
 
-### QE on 2 nodes
+## QE parallel calculation on 2 nodes
 
 QE has several levels of parallelization. The parallelization scheme can be manipulated by 5 input parameters in calling pw.x program:    
 
