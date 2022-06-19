@@ -4,3 +4,31 @@
     * [Automatic installation of version 5.0.4](#automatic-installation-of-version-504)   
 
 
+### QE on 2 nodes
+
+QE has several levels of parallelization. The parallelization scheme can be manipulated by 5 input parameters in calling pw.x program:    
+
+> mpirun -np $PPN pw.x -ni 1 -nk 2 -nt 2 -nd 1 -nb 2 -input scf.in   
+
+For detailed description see https://www.quantum-espresso.org/Doc/user_guide/node20.html The default values are equal to 1.     
+
+Here are the test results for calculation time running QE on 2 nodes with 48 cores on Stokes supercluster of UCF:   
+
+```
+ ni  nk   nt   nd   nb   t_calc.
+ 1    1    1    1    1    2m32s
+ 1    1    1    4    1    3m13s
+ 1    1    1   16    1    5m32s
+ 1    2    2   16    2    5m59s
+ 1    2    1   16    2    3m41s
+ 1    2    2    1    8    2m34s
+ 1    4    1    4    4    1m45s
+ 1    2    1    4    2    1m40s
+ 1    2    1    4    4    1m38s
+ 1    2    2    1    4    1m28s
+ 1    2    1    1    2    1m19s
+ 1    2    2    1    2    1m15s      <-- optimized
+```
+The optimized running job script for 2 nodes is [job_QE_2x48](Example_04/job_QE_2x48)    
+Please note that optimized parameters depend on particular compiled version of QE (including scalapack or not) and particular system. Please also note, that for nscf calculation the optimized parameters will be different than for scf.    
+For larger number of nodes, probably, the optimized parameters for parallelization will involve hybrid MPI/OpenMP scheme.
