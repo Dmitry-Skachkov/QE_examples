@@ -47,7 +47,7 @@ For notations of high-symmetry points used in QE see [pdf](Example_02/A.Dal_Cors
 For description of different types of Brillouin zones see [Computational Materials Science, 49, 299 (2010)](https://doi.org/10.1016/j.commatsci.2010.05.010).   
 To generate the pathway you can use [on-line tool](https://aflow.org/aflow-online/).  
 
-There are available other on-line tools to generate k-points pathway, for example, here, with **different** notations for high-symmetry points. In QE there are implementation of two different schemes for plotting pathway.    
+There are available other on-line tools to generate k-points pathway, for example, [here](https://www.materialscloud.org/work/tools/seekpath), with **different** notations for high-symmetry points. In QE there are implementation of two different schemes for plotting pathway.    
 
 [Go to top](#quantum-espresso-usage)    
 
