@@ -1,2 +1,5 @@
 # QE_examples
-Quantum Espresso uasge
+
+Quantum Espresso usage    
+
+
