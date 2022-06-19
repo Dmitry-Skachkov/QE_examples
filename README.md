@@ -40,7 +40,7 @@ For larger number of nodes, probably, the optimized parameters for parallelizati
 
 ## Band structure calculation in QE     
 
-In order to calculate band structure in QE, you need to run 'scf' calculation to calcyulate the ground state, and thewn to run 'bands' calculation in order to calculate the band structure on the desired k-points pathway.
+In order to calculate band structure in QE, you need to run 'scf' calculation to calculate the ground state first, and then to run 'bands' calculation in order to calculate the band structure on the desired k-points pathway.
 
 In order to use automatic generation for k-points pathway you need to use [ibrav](https://www.quantum-espresso.org/Doc/INPUT_PW.html#idm218) parameter of QE input /= 0. 
 
