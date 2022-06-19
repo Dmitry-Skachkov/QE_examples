@@ -56,6 +56,8 @@ K_POINTS crystal_b
 gG   20                     # point Gamma with 20 intermediate points to next high-symmetry point 
 K    10
 M    20
+Y1   10
+L2   10
 gG    1
 ```
 
