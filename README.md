@@ -13,7 +13,7 @@ For detailed description see [here](https://www.quantum-espresso.org/Doc/user_gu
 
 The default values for ni, nk, nt, nd, nb are equal to 1.     
 
-Here are the test results for calculation time running QE on 2 nodes with 48 cores on Stokes supercluster of UCF:   
+Here are the test results for calculation time running QE on 2 nodes with 48 cores:   
 
 ```
  ni  nk   nt   nd   nb   t_calc.
