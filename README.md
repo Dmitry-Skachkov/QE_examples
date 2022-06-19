@@ -1,6 +1,6 @@
 # [Quantum Espresso](https://www.quantum-espresso.org/) usage
 
-* [Parallel calculation]([#qe-parallel-calculation-on-2-nodes))    
+* [Parallel calculation]([#qe-parallel-calculation-on-2-nodes)    
     
 
 ## QE parallel calculation on 2 nodes
@@ -9,7 +9,9 @@ QE has several levels of parallelization. The parallelization scheme can be mani
 
 > mpirun -np $PPN pw.x -ni 1 -nk 2 -nt 2 -nd 1 -nb 2 -input scf.in   
 
-For detailed description see https://www.quantum-espresso.org/Doc/user_guide/node20.html The default values are equal to 1.     
+For detailed description see [here](https://www.quantum-espresso.org/Doc/user_guide/node20.html)   
+
+The default values for ni, nk, nt, nd, nb are equal to 1.     
 
 Here are the test results for calculation time running QE on 2 nodes with 48 cores on Stokes supercluster of UCF:   
 
