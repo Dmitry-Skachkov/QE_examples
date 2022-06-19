@@ -1,6 +1,7 @@
 # [Quantum Espresso](https://www.quantum-espresso.org/) usage
 
 * [Parallel calculation](#qe-parallel-calculation-on-2-nodes)    
+* [Band structure calculation]()
     
 
 ## QE parallel calculation on 2 nodes
@@ -35,4 +36,8 @@ Please note that optimized parameters depend on particular compiled version of Q
 For larger number of nodes, probably, the optimized parameters for parallelization will involve hybrid MPI/OpenMP scheme.     
 
 
-[Go to top](#quantum-espresso-usage)
+[Go to top](#quantum-espresso-usage)    
+
+## Band structure calculation in QE     
+
+In order to use automatic generation for k-points pathway you need to use ibrav parameter /= 0. For all available ibrav parameters in QE see [here](https://www.quantum-espresso.org/Doc/INPUT_PW.html#idm218) 
