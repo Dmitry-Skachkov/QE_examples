@@ -1,6 +1,6 @@
 # [Quantum Espresso](https://www.quantum-espresso.org/) usage
 
-* [Parallel calculation](#qe-parallel-calculation-on-2-nodes))    
+* [Parallel calculation](#qe-parallel-calculation-on-2-nodes)    
     
 
 ## QE parallel calculation on 2 nodes
