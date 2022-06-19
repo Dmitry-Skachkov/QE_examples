@@ -58,7 +58,7 @@ K    10
 M    20
 Y1   10
 L2   10
-gG    1
+gS1   1
 ```
 
 For Greek names use first letter g:     
