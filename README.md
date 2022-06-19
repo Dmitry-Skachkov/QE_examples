@@ -1,8 +1,7 @@
 # [Quantum Espresso](https://www.quantum-espresso.org/) usage
 
-* [Parallel calculation](#yambo-installation-on-stokes-supercluster-of-ucf)    
+* [Parallel calculation]([#qe-parallel-calculation-on-2-nodes))    
     
-
 
 ## QE parallel calculation on 2 nodes
 
