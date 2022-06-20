@@ -45,7 +45,7 @@ In order to calculate band structure in QE, you need to run 'scf' calculation to
 For description of different types of Brillouin zones see [Computational Materials Science, 49, 299 (2010)](https://doi.org/10.1016/j.commatsci.2010.05.010).   
 To generate the pathway you can use [AFlow on-line tool](https://aflow.org/aflow-online/).  
 
-In order to use automatic generation for k-points pathway in QE you need to use [ibrav](https://www.quantum-espresso.org/Doc/INPUT_PW.html#idm218) parameter of QE input /= 0. 
+In order to use automatic generation for k-points pathway in QE you need to use non-zero [ibrav](https://www.quantum-espresso.org/Doc/INPUT_PW.html#idm218) parameter in QE input. 
 
 For notations of high-symmetry points used in QE see [Notes by Andrea Dal Corso](Example_02/A.Dal_Corso__Brillouin_zones.pdf)   
 
