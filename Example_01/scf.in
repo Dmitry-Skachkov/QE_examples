@@ -16,7 +16,6 @@
     nat = 3
     ntyp = 2
     ecutwfc = 50
-!    ecutrho = 320.0
     occupations = 'fixed'
     input_dft = 'pbe'
     starting_magnetization(1)=0.01
@@ -24,7 +23,6 @@
     noncolin                 = .TRUE.
     lspinorb                 = .TRUE.
     tot_charge = 0
-    force_symmorphic = .true.
 /
 
 &electrons
@@ -35,7 +33,6 @@
     conv_thr =  1e-9
     electron_maxstep = 200
     diago_full_acc = .true.
-!    startingpot = 'file'
 /
 
 ATOMIC_SPECIES
