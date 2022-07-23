@@ -7,7 +7,9 @@
 
 ## QE ground state calculation
 
+Submit job with ground state calculation
 
+> sbatch job_QE 
 
 
 ## QE parallel calculation on 2 nodes
