@@ -9,7 +9,7 @@
 
 Submit job with ground state calculation
 
-> sbatch job_QE     
+> sbatch [job_QE](https://github.com/Dmitry-Skachkov/QE_examples/blob/main/Example_01/job_QE)     
 
 [Go to top](#quantum-espresso-usage)       
 
