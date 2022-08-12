@@ -18,7 +18,7 @@ Submit job with ground state calculation
 
 QE has several levels of parallelization. The parallelization scheme can be manipulated by 5 input parameters in calling pw.x program:    
 
-> mpirun -np $PPN pw.x -ni 1 -nk 2 -nt 2 -nd 1 -nb 2 -input scf.in   
+> mpirun -np 96 pw.x -ni 1 -nk 2 -nt 2 -nd 1 -nb 2 -input scf.in   
 
 For detailed description see [here](https://www.quantum-espresso.org/Doc/user_guide/node20.html)   
 
