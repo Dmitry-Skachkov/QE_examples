@@ -3,7 +3,7 @@
 * [Ground state calculation](#qe-ground-state-calculation)
 * [Parallel calculation](#qe-parallel-calculation-on-2-nodes)    
 * [Band structure calculation](#band-structure-calculation-in-qe)
-* [Fat band plot](#fat-band-plot))
+* [Fat band plot](#fat-band-plot)
         
 
 ## QE ground state calculation
@@ -82,7 +82,11 @@ gS - &Sigma;
 
 [Go to top](#quantum-espresso-usage)    
 
-## Fat band plot     
+## Fat band plot  
+
+Calculate band structure and k-resolved PDOS
+
+> sbatch job_QE_band
 
 [Go to top](#quantum-espresso-usage)   
 
