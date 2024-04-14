@@ -1,0 +1,10 @@
+ &projwfc
+    outdir='./'
+    prefix='d'
+    ngauss=0
+    degauss=0.001
+    Emin=-6.2664, Emax=-1.2664, DeltaE=0.001
+    kresolveddos=.true.
+    filpdos='d.k'
+ /
+ 

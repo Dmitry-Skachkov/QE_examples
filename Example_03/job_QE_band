@@ -1,0 +1,60 @@
+#!/bin/bash
+#SBATCH --time=3:00:00
+#SBATCH --nodes=1 
+#SBATCH --ntasks-per-node=48
+#SBATCH --job-name=GaSe_orbitals
+#SBATCH --mail-type=END,FAIL
+#SBATCH --account=mleuenberger
+#SBATCH --mail-user=d.g.skachkov@gmail.com
+#SBATCH --error=error.txt
+#SBATCH --output=output.txt
+ 
+module load espresso/espresso-6.6-mvapich2-2.3.1-ic-2019.3.199
+#module load espresso/espresso-7.1-oneapi-2021.2.0+d3q
+
+
+
+export MV2_ENABLE_AFFINITY=0 
+export I_MPI_PIN_DOMAIN=auto 
+export I_MPI_PIN_ORDER=bunch 
+export KMP_AFFINITY=compact,granularity=fine,1 
+export OMP_NUM_THREADS=1
+
+PPN=$(( $SLURM_TASKS_PER_NODE / $OMP_NUM_THREADS ))
+echo "PPN = $PPN"
+
+### Quantum Espresso:
+#mpirun -ppn $PPN pw.x -ni 1 -nk 2  -nt 2 -nd 1 -nb 2 -input scf.in  > scf.out
+#mpirun -ppn $PPN pw.x -ni 1 -nk 2  -nt 2 -nd 1 -nb 2 -input scf2.in  > scf2.out
+mpirun -ppn $PPN pw.x -ni 1 -nk 2  -nt 2 -nd 1 -nb 2 -input scf3.in  > scf3.out
+#mpirun -ppn $PPN pw.x -ni 1 -nk 12 -nt 1 -nd 1 -nb 1 -input nscf.in > nscf.out
+
+### DOS
+#mpiexec   -ppn $PPN dos.x < dos.in > dos.out
+
+### PDOS 
+mpirun   -ppn $PPN projwfc.x < kpdos.in > kpdos.out
+
+### Complex band 
+#mpiexec   -ppn 16 pwcond.x < cond.in > cond.out
+
+### Quantum Espresso Band structure:
+#mpirun -ppn $PPN pw.x -ni 1 -nk 24 -nt 1 -nd 1 -nb 1 < bands.in > bands.out
+#mpirun -ppn $PPN bands.x < bandsx.in > bandsx.out
+
+### GIPAW hyperfine
+#mpiexec   -ppn $PPN gipaw.x < hyperfine.in > hyperfine.out
+
+### GIPAW g-tensor
+#mpiexec   -ppn $PPN gipaw.x < g-tensor.in > g-tensor.out
+
+### PP
+#mpiexec   -ppn $PPN pp.x < pp.in > pp.out
+#mpiexec   -ppn $PPN pp.x < pp_spin2_HOMO_1.in > pp_spin2_HOMO_1.out
+#mpiexec   -ppn $PPN pp.x < pp_spin2_HOMO.in > pp_spin2_HOMO.out
+
+ 
+
+
+
+
