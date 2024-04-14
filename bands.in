@@ -1,0 +1,67 @@
+
+&control
+    calculation = 'bands'
+    restart_mode = 'from_scratch'
+    pseudo_dir = './'
+    prefix = 'd'
+    outdir = './'
+    nstep = 100
+    wf_collect = .true.
+    verbosity = 'high'
+/
+
+&system
+    ibrav = 4
+    A = 3.743
+    C = 20.000
+    nat = 4
+    ntyp = 2
+    ecutwfc = 60
+    occupations = 'fixed'
+    nbnd = 80
+    nosym = .TRUE.
+!    occupations = 'smearing'
+!    smearing = gauss
+!    degauss = 0.01
+    input_dft = 'pbe'
+!    vdw_corr = 'dft-d'
+    starting_magnetization(1)=0.01
+    starting_magnetization(2)=0.01
+    noncolin                 = .TRUE.
+    lspinorb                 = .TRUE.
+    tot_charge = 0
+!    force_symmorphic = .true.
+/
+
+&electrons
+    diagonalization = 'david'
+    diago_thr_init = 1e-6
+    mixing_mode = 'plain'
+    mixing_beta = 0.7
+    conv_thr =  1e-9
+    electron_maxstep = 200
+    diago_full_acc = .true.
+    startingpot = 'file'
+/
+
+$IONS
+ion_dynamics = damp
+/
+
+ATOMIC_SPECIES
+Ga  69.72 Ga.rel-pbe-dnl-kjpaw_psl.1.0.0.UPF
+Se  78.96 Se.rel-pbe-dn-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS angstrom
+Ga     2.058649778         1.404664278        10.834470749  
+Ga     2.058649778         1.404664278        13.044028282  
+Se     0.187150121         2.485175371        14.093201637  
+Se     0.187150121         2.485175371         9.785297394 
+
+K_POINTS crystal_b
+2
+0.      0.      0.  50
+0.50000 0.00000 0.  50  
+
+
+
