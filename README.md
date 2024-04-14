@@ -86,7 +86,7 @@ gS - &Sigma;
 
 Calculate band structure and k-resolved PDOS
 
-> sbatch job_QE_band
+> sbatch [job_QE_band](Example_03/job_QE_band)
 
 [Go to top](#quantum-espresso-usage)   
 
