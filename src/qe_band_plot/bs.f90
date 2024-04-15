@@ -9,8 +9,6 @@
     integer               :: nbnd                         ! number of bands
     integer, parameter    :: Nks = 2
     integer               :: ks(Nks)                      ! high-symmetry points
-!    integer               :: kf                          ! # of k-point for zero level   
-!    integer               :: bf                          ! # of band for zero level   
     real(8), allocatable  :: kp(:,:)                      ! k-points 
     real(8), allocatable  :: bn(:,:)                      ! bands 
     real(8)               :: EF                           ! Fermi level
@@ -23,12 +21,6 @@
     subroutine read_bands
      call getargi(1,ks(1))                      ! G
      call getargi(2,ks(2))                      ! M   K
-!!     call getargi(3,ks(3))                      ! M
-!!     call getargi(4,ks(4))                      ! G
-!     call getargi(5,kf)                        
-!     call getargi(6,bf)   
-!!     call getargR(5,EF)   
-!!     call getargR(6,Eshift)   
      call getargR(3,EF)   
      call getargR(4,Eshift)   
      print *,'high-symmetry points:'
@@ -47,21 +39,12 @@
      enddo
      
      ! substitute high-symmetry points by crystal coordinates
-!     kp(1:3,ks(1)) = (/0.d0, 0.d0, 0.d0/)
-!     kp(1:3,ks(2)) = (/0.33333d0, 0.33333d0, 0.d0/)
-!     kp(1:3,ks(3)) = (/0.5d0, 0.d0, 0.d0/)
-!     kp(1:3,ks(4)) = (/0.d0, 0.d0, 0.d0/)
-
      kp(1:3,ks(1)) = (/0.d0, 0.d0, 0.d0/)
      kp(1:3,ks(2)) = (/0.5d0, 0.d0, 0.d0/)
      
      print *,'TEST'
      print *,kp(1:3,ks(1))
      print *,kp(1:3,ks(2))
-!!     print *,kp(1:3,ks(3))
-!!     print *,kp(1:3,ks(4))
-     
-!     EF = bn(bf,kf)
      print *,'Fermi level=',EF
      print *,'Shift =',Eshift
  1   format(12x,I4,6x,I6)
