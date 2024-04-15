@@ -22,6 +22,9 @@
         elseif(nSO == 2) then
          lSO = .true.
         endif
+!        EVBM = -0.4484d0               
+!        Nan(1) = 2                   ! 2 atoms of atom(1) in input
+!        Nan(2) = 2                   ! 2 atoms of atom(2) in input
 
         call read_kpath                                  ! the kpath.dat file is created in qe_band_plot
         call read_qe_kpdos
