@@ -84,9 +84,13 @@ gS - &Sigma;
 
 ## Fat band plot  
 
-Calculate band structure and k-resolved PDOS
+Calculate band structure
 
 > sbatch [job_QE_band](Example_03/job_QE_band)
+
+Calculate k-resolved PDOS
+
+> sbatch [job_QE_band2](Example_03/job_QE_band2)
 
 Make data file for bands
 
@@ -94,7 +98,7 @@ Make data file for bands
 
 Make data file with fat bands
 
-> fat_band_plot Ga 2 Se 2 2 -0.7604 
+> sbatch [job_plot](Example_03/job_plot) 
 
 [Go to top](#quantum-espresso-usage)   
 
