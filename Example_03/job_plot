@@ -4,8 +4,8 @@
 #SBATCH --nodes=1 
 #SBATCH --ntasks-per-node=26
 #SBATCH --cpus-per-task=1
-#SBATCH --account=mleuenberger
-#SBATCH --mail-user=d.g.skachkov@gmail.com
+#SBATCH --account=<ACCOUNT>
+#SBATCH --mail-user=<EMAIL>
 #SBATCH --mail-type=END,FAIL
 #SBATCH --error=error1.txt
 #SBATCH --output=output1.txt
