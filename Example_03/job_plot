@@ -1,0 +1,34 @@
+#!/bin/bash
+#SBATCH --job-name=GaSe_plot
+#SBATCH --time=3:00:00
+#SBATCH --nodes=1 
+#SBATCH --ntasks-per-node=26
+#SBATCH --cpus-per-task=1
+#SBATCH --account=mleuenberger
+#SBATCH --mail-user=d.g.skachkov@gmail.com
+#SBATCH --mail-type=END,FAIL
+#SBATCH --error=error1.txt
+#SBATCH --output=output1.txt
+
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+export MV2_ENABLE_AFFINITY=0 
+export I_MPI_PIN_DOMAIN=auto 
+export I_MPI_PIN_ORDER=bunch 
+export KMP_AFFINITY=compact,granularity=fine,1
+ 
+module load ic/ic-2019.3.199
+module load mvapich2/mvapich2-2.3.1-ic-2019.3.199
+
+PPN=$(( $SLURM_NTASKS_PER_NODE * $SLURM_JOB_NUM_NODES ))
+echo "number of MPI processes   = $PPN"
+echo "number of OpenMP threads  = $OMP_NUM_THREADS"
+
+
+
+mpirun -np 26 fat_band_plot Ga 2 Se 2 1 -1.9624 1
+                                      | 1- no SO
+                                      | 2 - SO
+                                         | EVBM
+                                                | create data file for first atom
+
+
