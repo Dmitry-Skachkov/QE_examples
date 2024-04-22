@@ -100,7 +100,7 @@ Make data file with fat bands
 
 > sbatch [job_plot](Example_03/job_plot)
 
-The resulys is [Fat_bands.pdf](Example_03/Fat_bands.pdf)
+The results is [Fat_bands.pdf](Example_03/Fat_bands.pdf)
 
 [Go to top](#quantum-espresso-usage)   
 
