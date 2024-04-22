@@ -25,7 +25,7 @@ echo "number of OpenMP threads  = $OMP_NUM_THREADS"
 
 
 
-mpirun -np 26 fat_band_plot Ga 2 Se 2 1 -1.9624 1
+mpirun -np 26 fat_band_plot Ga 2 Se 2 1 -0.7604 1
                                       | 1- no SO
                                       | 2 - SO
                                          | EVBM
