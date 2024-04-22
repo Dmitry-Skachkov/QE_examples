@@ -24,10 +24,6 @@ echo "PPN = $PPN"
 ### Quantum Espresso:
 mpirun -ppn $PPN pw.x -ni 1 -nk 2  -nt 2 -nd 1 -nb 2 -input scf.in  > scf.out
 mpirun -ppn $PPN pw.x -ni 1 -nk 2  -nt 2 -nd 1 -nb 2 -input scf2.in  > scf2.out
-mpirun -ppn $PPN pw.x -ni 1 -nk 2  -nt 2 -nd 1 -nb 2 -input scf3.in  > scf3.out
-
-### PDOS 
-mpirun   -ppn $PPN projwfc.x < kpdos.in > kpdos.out
 
 ### Quantum Espresso Band structure:
 mpirun -ppn $PPN pw.x -ni 1 -nk 24 -nt 1 -nd 1 -nb 1 < bands.in > bands.out
