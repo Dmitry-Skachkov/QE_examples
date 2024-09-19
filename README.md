@@ -1,6 +1,6 @@
 # [Quantum Espresso](https://www.quantum-espresso.org/) usage
 
-* [Compilation QE 7.3.1]
+* [Compilation QE 7.3.1](#compilation-qe-731-on-carpenter-cluster)
 * [Ground state calculation](#qe-ground-state-calculation)
 * [Parallel calculation](#qe-parallel-calculation-on-2-nodes)    
 * [Band structure calculation](#band-structure-calculation-in-qe)
