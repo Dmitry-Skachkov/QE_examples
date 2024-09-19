@@ -31,6 +31,8 @@ Load modules
 12) PrgEnv-intel/8.4.0
 ```        
 
+> ./configure
+
 > make all
 
 
