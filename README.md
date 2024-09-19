@@ -1,10 +1,38 @@
 # [Quantum Espresso](https://www.quantum-espresso.org/) usage
 
+* [Compilation QE 7.3.1]
 * [Ground state calculation](#qe-ground-state-calculation)
 * [Parallel calculation](#qe-parallel-calculation-on-2-nodes)    
 * [Band structure calculation](#band-structure-calculation-in-qe)
 * [Fat band plot](#fat-band-plot)
-        
+
+
+## Compilation QE 7.3.1 on Carpenter cluster
+
+> wget https://www.quantum-espresso.org/rdm-download/488/v7-3-1/b1efb691fb214393cd1c1a762d82ea3d/qe-7.3.1-ReleasePack.tar.gz
+
+Load modules
+> module load PrgEnv-intel/8.4.0
+
+> module list
+
+```
+1) craype-x86-rome
+2) cray-pals/1.2.12
+3) cray-dsmml/0.2.2
+4) cray-mpich/8.1.26
+5) cray-libsci/23.05.1.4
+6) craype/2.7.21
+7) craype-network-ofi
+8) perftools-base/23.05.0
+9) intel/2023.0.0
+10) libfabric/1.15.2.0
+11) xpmem/2.5.2-2.4_3.58__gd0f7936.shasta
+12) PrgEnv-intel/8.4.0
+```        
+
+> make all
+
 
 ## QE ground state calculation
 
