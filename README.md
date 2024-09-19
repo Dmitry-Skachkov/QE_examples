@@ -9,7 +9,7 @@
 
 ## Compilation QE 7.3.1 on Carpenter cluster
 
-> wget https://www.quantum-espresso.org/
+Download QE archive from https://www.quantum-espresso.org/
 
 Load modules
 > module load PrgEnv-intel/8.4.0
