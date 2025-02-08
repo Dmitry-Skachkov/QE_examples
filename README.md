@@ -1,14 +1,16 @@
 # [Quantum Espresso](https://www.quantum-espresso.org/) usage
 
-* [Compilation QE 7.3.1](#compilation-qe-731-on-carpenter-cluster)
-* [Compilation QE 7.4.1](#compilation-on-darwin-cluester-of-university-of-delaware)
+* [Compilation]
+ * [Compilation QE 7.3.1](#compilation-qe-731-on-carpenter-cluster)
+ * [Compilation QE 7.4.1](#compilation-on-darwin-cluester-of-university-of-delaware)
 * [Ground state calculation](#qe-ground-state-calculation)
 * [Parallel calculation](#qe-parallel-calculation-on-2-nodes)    
 * [Band structure calculation](#band-structure-calculation-in-qe)
 * [Fat band plot](#fat-band-plot)
 
 
-## Compilation QE 7.3.1 on Carpenter cluster
+## Compilation
+### Compilation QE 7.3.1 on Carpenter cluster
 
 Download QE archive from https://www.quantum-espresso.org/
 
@@ -36,7 +38,7 @@ Load modules
 
 > make all
 
-## Compilation on DARWIN cluester of University of Delaware
+### Compilation on DARWIN cluester of University of Delaware
 
 Load modules
 > vpkg_require openmpi/4.1.5:intel-2020
