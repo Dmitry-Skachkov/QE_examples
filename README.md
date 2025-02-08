@@ -1,6 +1,7 @@
 # [Quantum Espresso](https://www.quantum-espresso.org/) usage
 
 * [Compilation QE 7.3.1](#compilation-qe-731-on-carpenter-cluster)
+* [Compilation QE 7.4.1](#compilation-qe-731-on-carpenter-cluster)
 * [Ground state calculation](#qe-ground-state-calculation)
 * [Parallel calculation](#qe-parallel-calculation-on-2-nodes)    
 * [Band structure calculation](#band-structure-calculation-in-qe)
@@ -34,6 +35,20 @@ Load modules
 > ./configure
 
 > make all
+
+## Compilation on DARWIN cluester of University of Delaware
+
+Load modules
+> vpkg_require openmpi/4.1.5:intel-2020
+> vpkg_require intel-mkl/2020u4
+
+Configure the system:
+> ./configure
+
+Installing 
+> make all
+
+
 
 
 ## QE ground state calculation
