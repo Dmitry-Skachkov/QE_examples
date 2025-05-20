@@ -51,6 +51,8 @@ Configure the system:
 Installing 
 > make all
 
+or if it is necessary to recompile just pw.x 
+> make pw
 
 
 
