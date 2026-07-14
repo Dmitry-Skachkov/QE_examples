@@ -3,7 +3,7 @@
 * [Compilation](#compilation)
     * [Compilation QE 7.3.1](#compilation-qe-731-on-carpenter-cluster)
     * [Compilation QE 7.4.1](#compilation-on-darwin-cluester-of-university-of-delaware)
-    * [Compilation QE 7.5](#compilation-on-darwin-cluester-of-university-of-delaware)
+    * [Compilation QE 7.5](#compilation-on-anvil-cluster-of-purdue-university)
 * [Ground state calculation](#qe-ground-state-calculation)
 * [Parallel calculation](#qe-parallel-calculation-on-2-nodes)    
 * [Band structure calculation](#band-structure-calculation-in-qe)
