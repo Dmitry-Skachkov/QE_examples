@@ -38,7 +38,7 @@ Load modules
 
 > make all
 
-### Compilation on DARWIN cluester of University of Delaware
+### Compilation on DARWIN cluster of University of Delaware
 
 Load modules
 > vpkg_require openmpi/4.1.5:intel-2020
@@ -53,6 +53,19 @@ Installing
 
 or if it is necessary to recompile just pw.x 
 > make pw
+
+### Compilation on ANVIL cluster of Purdue University
+
+Load modules
+> vpkg_require openmpi/4.1.5:intel-2020
+
+> vpkg_require intel-mkl/2020u4
+
+Configure the system:
+> ./configure
+
+Installing 
+> make all
 
 
 
