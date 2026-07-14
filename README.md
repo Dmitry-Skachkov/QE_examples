@@ -57,9 +57,10 @@ or if it is necessary to recompile just pw.x
 ### Compilation on ANVIL cluster of Purdue University
 
 Load modules
-> vpkg_require openmpi/4.1.5:intel-2020
 
-> vpkg_require intel-mkl/2020u4
+> module load intel/19.0.5.281
+
+> module load impi/2019.5.281
 
 Configure the system:
 > ./configure
